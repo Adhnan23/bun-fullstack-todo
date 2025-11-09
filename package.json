@@ -1,0 +1,15 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --filter '@todo/client' --filter '@todo/server' dev",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:up-full": "docker compose up"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
