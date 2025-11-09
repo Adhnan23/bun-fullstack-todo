@@ -33,11 +33,10 @@ Create the following files and populate them with the credentials below.
 #### Project Root: `.env` (Used by Docker Compose)
 
 ```env
-POSTGRES_USER=karots
-POSTGRES_PASSWORD=22732273
+POSTGRES_USER=user
+POSTGRES_PASSWORD=password
 POSTGRES_DB=todo
 POSTGRES_PORT=5432
-
 REDIS_PORT=6379
 ```
 
@@ -46,7 +45,7 @@ REDIS_PORT=6379
 ```env
 NODE_ENV=development
 PORT=4000
-DATABASE_URL=postgres://karots:22732273@localhost:5432/todo
+DATABASE_URL=postgres://user:password@localhost:5432/todo
 REDIS_URL=redis://localhost:6379
 FRONTEND_URL=http://localhost:5173
 ```
@@ -95,7 +94,7 @@ bun dev
 | Service | Address |
 | :--- | :--- |
 | **Backend API (Elysia)** | `http://localhost:4000` |
-| **OpenAPI Docs (Swagger)** | `http://localhost:4000/swagger` |
+| **OpenAPI Docs** | `http://localhost:4000/openapi` |
 | **Frontend (Vite)** | `http://localhost:5173` |
 
 -----
